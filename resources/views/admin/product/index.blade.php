@@ -14,7 +14,7 @@
                             <div class="card">
                                 <div class="card-half card-product">
                                     <a href="{{ route('shop.show', $product->slug  ) }}">
-                                    <img src="http://rk.pbimgs.com/pbimgs/rk/images/dp/wcm/201704/0007/durham-fixed-dining-table-sadie-chair-9-piece-dining-set-o.jpg" alt="">
+                                    <img src="{{ asset('/img/'. $product->image) }}" alt="">
                                     </a>
                                 </div>
                                 <div class="card-half card-description">

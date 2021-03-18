@@ -17,6 +17,10 @@ class CartController extends Controller
         return view('cart');
     }
 
+    public function cart(){
+        return view('cart');
+    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -40,7 +44,8 @@ class CartController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Cart::remove($id);
+        return back()->with('success','le produit à été supprimé');
     }
 
     public function reset()

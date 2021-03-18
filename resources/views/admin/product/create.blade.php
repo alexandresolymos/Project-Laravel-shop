@@ -6,7 +6,7 @@
             <a href="{{route('admin.product.index')}}" class="btn-grad">Retour</a>
 
              <div class="form-admin">
-                 <form method="POST" action="{{ route('admin.product.store') }}">
+                 <form method="POST" action="{{ route('admin.product.store') }}" enctype="multipart/form-data">
                      @csrf
                      <div class="form-group">
                      <label for="">Titre</label>
@@ -47,6 +47,14 @@
                      @error('price')
                      <strong>{{ $message }}</strong>
                      @enderror
+                     </div>
+
+                     <div class="form-group">
+                         <label for="">Image</label>
+                         <input type="file" name="image">
+                         @error('image')
+                         <strong>{{ $message }}</strong>
+                         @enderror
                      </div>
 
 

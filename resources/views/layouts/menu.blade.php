@@ -11,7 +11,10 @@
                         Article</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/">accueil</a>
+                    <a class="nav-link" href="{{ route('cart.index') }}">Cart
+                    @if(Cart::instance('default')->count() > 0)
+                    <span>{{ Cart::instance('default')->count() }}</span>
+                        @endif</a>
                 </li>
 
             </ul>

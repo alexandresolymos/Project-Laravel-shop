@@ -34,6 +34,14 @@
                     <input type="number" name="price" step="1" value="{{ $product->price }}">
                 </div>
 
+                <div class="form-group">
+                    <label for="">Image</label>
+                    <img src="{{ asset('/img/'. $product->image) }}" alt="">
+
+                    <input type="file" name="image" value="{{ $product->image }}">
+
+                </div>
+
                 <button class="btn-grad-product" type="submit">Valider</button>
             </form>
         </div>

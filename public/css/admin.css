@@ -116,10 +116,9 @@ a {text-decoration: none;}
 #menu-toggle:hover {color:#D56456;}
 
 #content {
-    margin: 6em 0 0 0;
-    max-width: 76%;
-    position: relative;
-    left: 300px;
+    margin: 6em 0 0 18em;
+    max-width: 80%;
+
 }
 #content p {
     padding:0;
@@ -157,7 +156,7 @@ a.active {
 .content-header {
     display: flex;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
 }
 .nav-footer {
@@ -408,6 +407,10 @@ button:focus {
     border-bottom: 2px solid #2d2d2d;
 }
 
+.form-admin textarea {
+    height: 300px;
+}
+
 .form-group{
     float: left;
     margin: auto;
@@ -432,4 +435,8 @@ input:focus {
     width: 50%;
     padding: 1em;
     margin: 2em auto;
+}
+
+.padding {
+    padding: 3em;
 }

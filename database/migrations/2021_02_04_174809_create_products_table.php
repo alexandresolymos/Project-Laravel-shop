@@ -19,11 +19,13 @@ class CreateProductsTable extends Migration
             $table->string('slugy')->unique();
             $table->string('slug')->nullable();
             $table->string('subtitle')->nullable();
+            $table->string('image')->nullable();
             $table->text('description');
             $table->integer('price');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.

@@ -49,9 +49,13 @@
                                         <input disabled type="text" class="form-control input-sm" value="{{ $product->qty }}">
                                     </div>
                                     <div class="col-xs-2">
-                                        <button type="button" class="btn btn-link btn-xs">
-                                            <span class="glyphicon glyphicon-trash"> </span>
-                                        </button>
+                                        <form action="{{ route('cart.destroy', $product->rowId) }}" method="POST">
+                                            {{ csrf_field() }}
+                                            {{ method_field('DELETE') }}
+                                            <button type="submit" class="btn btn-link btn-xs">
+                                                <span class="glyphicon glyphicon-trash"> </span>
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -77,12 +81,16 @@
                     <div class="panel-footer">
                         <div class="row text-center">
                             <div class="col-xs-9">
-                                <h4 class="text-right">Total <strong>{{ $product->total }}</strong></h4>
+                                <h4 class="text-right">Sous-Total <strong>{{ Cart::subtotal() }}</strong></h4>
+                                <h4 class="text-right">Tva <strong>{{ Cart::tax() }}</strong></h4>
+                                <h4 class="text-right">Total <strong>{{ Cart::total() }}</strong></h4>
+
+
                             </div>
                             <div class="col-xs-3">
-                                <button type="button" class="btn btn-success btn-block">
+                                <a href="{{ route('checkout') }}" class="btn btn-success btn-block">
                                     Checkout
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>

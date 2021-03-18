@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use App\Http\Requests\ProductRequest;
 
@@ -58,13 +59,21 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
 
+        $fileName = null;
+        if (request()->hasFile('image')) {
+            $image = request()->file('image');
+            $fileName = md5($image->getClientOriginalName() . time()) . "." . $image->getClientOriginalExtension();
+            $image->move('./img/', $fileName);
+        }
 
-        Product::create([
+       Product::create([
            'title' => $request->input('title'),
            'slugy' => $request->input('slugy'),
            'subtitle' => $request->input('subtitle'),
            'description' => $request->input('description'),
            'price' => $request->input('price'),
+            'image' => $fileName,
+
         ]);
 
         return redirect()->route('admin.product.index');
@@ -91,8 +100,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        return view('admin.product.edit', compact('product'),
-           );
+        return view('admin.product.edit', compact('product'));
     }
 
     /**
@@ -104,12 +112,33 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
+
+        $fileName = null;
+        $currentImage = $product->image;
+
+        if (request()->hasFile('image')) {
+            $image = request()->file('image');
+            $fileName = md5($image->getClientOriginalName() . time()) . "." . $image->getClientOriginalExtension();
+            $image->move('./img/', $fileName);
+        }
+        else
+            $fileName = $currentImage;
+
+if($fileName && $currentImage)
+{
+    Storage::delete('./img/' . $currentImage);
+}
+
+
         $product->title = $request->input('title');
         $product->subtitle = $request->input('subtitle');
         $product->slugy = $request->input('slugy');
         $product->slug = Str::slug($product->slugy, '-');
         $product->description = $request->input('description');
         $product->price = $request->input('price');
+        $product->image = $fileName;
+
+
         $product->save();
 
         return redirect()->route('admin.product.index')->with(
@@ -129,4 +158,5 @@ class ProductController extends Controller
         return redirect()->route('admin.product.index')->with('success',"Produit bien supprimé");
 
     }
+
 }
