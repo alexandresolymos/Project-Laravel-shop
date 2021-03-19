@@ -13,15 +13,33 @@ use App\Http\Requests\PaymetRequest;
 
 class CheckoutController extends Controller
 {
+    /**
+     * Affichage de la vue checkout
+     *
+     * @return \Illuminate\Http\Response
+     */
+
     public function checkout(){
         return view('checkout');
     }
 
+    /**
+     * Lors du succes de la commande on retourne la vue success
+     * et on supprime en meme temps le panier
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function success(){
         Cart::destroy();
         return view('success');
     }
 
+
+    /**
+     * On affiche tous les système de paiement
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function payment()
     {
         $payment = Payment::all();

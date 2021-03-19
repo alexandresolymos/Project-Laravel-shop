@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use App\Http\Requests\ProductRequest;
 
@@ -12,7 +11,7 @@ class ProductController extends Controller
 {
 
     /**
-     * Display a listing of the resource.
+     * Function random pour prendre 5 produits aléàtoirement
      *
      * @return \Illuminate\Http\Response
      */
@@ -23,17 +22,33 @@ class ProductController extends Controller
         return view('home', compact('products'));
     }
 
+
+    /**
+     * Retourne la vue index
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
         return view('admin.index');
     }
 
+    /**
+     * Recuperation de la liste des produits facon inversée dans l'admin
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function product()
     {
         $product = Product::all()->reverse();
         return view('admin.product.index', compact('product'));
     }
 
+    /**
+     * Recuperation des produits dans le shop
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function indextwo()
     {
         $product = Product::all();
@@ -72,8 +87,7 @@ class ProductController extends Controller
            'subtitle' => $request->input('subtitle'),
            'description' => $request->input('description'),
            'price' => $request->input('price'),
-            'image' => $fileName,
-
+           'image' => $fileName,
         ]);
 
         return redirect()->route('admin.product.index');
@@ -113,15 +127,12 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
 
-
-
         $product->title = $request->input('title');
         $product->subtitle = $request->input('subtitle');
         $product->slugy = $request->input('slugy');
         $product->slug = Str::slug($product->slugy, '-');
         $product->description = $request->input('description');
         $product->price = $request->input('price');
-
         $product->save();
 
         return redirect()->route('admin.product.index')->with(
