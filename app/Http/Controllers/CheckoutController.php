@@ -115,11 +115,6 @@ class CheckoutController extends Controller
                 'description' => 'Paiment',
                 'source' => $request->stripeToken,
                 'receipt_email' => $request->email,
-                'metadata' => [
-                    'owner' => $request->name,
-                    'name' => $request->lastname,
-                    'owner' => $request->firstname,
-                ],
             ]);
 
             return redirect()->route('success.checkout');

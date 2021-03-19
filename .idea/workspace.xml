@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7ef47f0-3f21-423e-948a-b61ddf472c31" name="Default Changelist" comment="Fixt : Upload image">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +194,7 @@
       <workItem from="1615487729417" duration="49453000" />
       <workItem from="1615652202662" duration="156000" />
       <workItem from="1615727415865" duration="81061000" />
-      <workItem from="1616087308608" duration="12953000" />
+      <workItem from="1616087308608" duration="14201000" />
     </task>
     <task id="LOCAL-00001" summary="Fixt : Add Checkout with stripe&#10;       - Add image to Product">
       <created>1616088308254</created>
@@ -244,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616164345833</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixt : Upload image">
+      <created>1616164447127</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616164447127</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,10 +305,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1615821273122" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616164349988">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616164450280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616164349988" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616164450280" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1615734034851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
