@@ -80,7 +80,6 @@ class ProductController extends Controller
             $fileName = md5($image->getClientOriginalName() . time()) . "." . $image->getClientOriginalExtension();
             $image->move('./img/', $fileName);
         }
-
        Product::create([
            'title' => $request->input('title'),
            'slugy' => $request->input('slugy'),
