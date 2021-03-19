@@ -113,18 +113,6 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
 
-        if(request()->hasFile('image')){
-            // Get filename with the extension
-            $filenameWithExt = request()->file('image')->getClientOriginalName();
-            // Get just filename
-            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-            // Get just ext
-            $extension = request()->file('image')->getClientOriginalExtension();
-            // Filename to store
-            $fileNameToStore= $filename.'_'.time().'.'.$extension;
-            // Upload Image
-            request()->file('image')->move('./img/', $fileNameToStore);
-        }
 
 
         $product->title = $request->input('title');
@@ -133,10 +121,6 @@ class ProductController extends Controller
         $product->slug = Str::slug($product->slugy, '-');
         $product->description = $request->input('description');
         $product->price = $request->input('price');
-        if($request->hasFile('image')){
-            $product->image = $fileNameToStore;
-        }
-
 
         $product->save();
 

@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7ef47f0-3f21-423e-948a-b61ddf472c31" name="Default Changelist" comment="Fixt : Add Checkout with stripe&#10;       - Add image to Product">
+    <list default="true" id="c7ef47f0-3f21-423e-948a-b61ddf472c31" name="Default Changelist" comment="Fixt : Problème image en cours">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +194,7 @@
       <workItem from="1615487729417" duration="49453000" />
       <workItem from="1615652202662" duration="156000" />
       <workItem from="1615727415865" duration="81061000" />
-      <workItem from="1616087308608" duration="7507000" />
+      <workItem from="1616087308608" duration="10519000" />
     </task>
     <task id="LOCAL-00001" summary="Fixt : Add Checkout with stripe&#10;       - Add image to Product">
       <created>1616088308254</created>
@@ -204,7 +203,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616088308254</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixt : Problème image en cours">
+      <created>1616098219474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616098219474</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixt : Problème image en cours">
+      <created>1616098239088</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616098239088</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +236,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixt : Add Checkout with stripe&#10;       - Add image to Product" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixt : Add Checkout with stripe&#10;       - Add image to Product" />
+    <MESSAGE value="Fixt : Problème image en cours" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixt : Problème image en cours" />
   </component>
   <component name="WindowStateProjectService">
     <state x="510" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615807215219">
@@ -254,10 +268,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1615821273122" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616088471658">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616098241757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616088471658" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616098241757" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1615734034851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
