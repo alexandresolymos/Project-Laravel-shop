@@ -6,7 +6,7 @@
             <a href="{{route('admin.product.index')}}" class="btn-grad">Retour</a>
 
         <div class="form-admin">
-            <form method="POST" action="{{ route('admin.product.update', $product->id) }}">
+            <form method="POST" action="{{ route('admin.product.update', $product->id) }}" enctype="multipart/form-data">
                 @csrf
                 @method("PUT")
                 <div class="form-group">

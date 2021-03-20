@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use App\Http\Requests\ProductRequest;
 
@@ -129,6 +130,22 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
 
+        $fileName = null;
+        $currentImage = $product->image;
+
+        if (request()->hasFile('image')) {
+            $image = request()->file('image');
+            $fileName = md5($image->getClientOriginalName() . time()) . "." . $image->getClientOriginalExtension();
+            $image->move('./img/', $fileName);
+        }
+        else
+            $fileName = $currentImage;
+
+        if($fileName && $currentImage)
+        {
+            Storage::delete('./img/' . $fileName);
+        }
+
         $product->title = $request->input('title');
         $product->subtitle = $request->input('subtitle');
         $product->slugy = $request->input('slugy');
@@ -138,6 +155,8 @@ class ProductController extends Controller
         $product->balise_alt = $request->input('balise_alt');
         $product->meta_title = $request->input('meta_title');
         $product->meta_description = $request->input('meta_description');
+        $product->image = $fileName;
+
         $product->save();
 
         return redirect()->route('admin.product.index')->with(
