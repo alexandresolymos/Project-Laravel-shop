@@ -16,7 +16,10 @@ class Product extends Model
       'price',
       'slugy',
       'fullpath',
-        'image'
+      'image',
+        'meta_title',
+        'meta_description',
+        'balise_alt'
 
     ];
 }

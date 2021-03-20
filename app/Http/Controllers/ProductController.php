@@ -86,6 +86,9 @@ class ProductController extends Controller
            'subtitle' => $request->input('subtitle'),
            'description' => $request->input('description'),
            'price' => $request->input('price'),
+           'balise_alt' => $request->input('balise_alt'),
+           'meta_title' => $request->input('meta_title'),
+           'meta_description' => $request->input('meta_description'),
            'image' => $fileName,
         ]);
 
@@ -132,6 +135,9 @@ class ProductController extends Controller
         $product->slug = Str::slug($product->slugy, '-');
         $product->description = $request->input('description');
         $product->price = $request->input('price');
+        $product->balise_alt = $request->input('balise_alt');
+        $product->meta_title = $request->input('meta_title');
+        $product->meta_description = $request->input('meta_description');
         $product->save();
 
         return redirect()->route('admin.product.index')->with(

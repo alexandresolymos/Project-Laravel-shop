@@ -19,10 +19,6 @@
                     <input type="text" name="subtitle" value="{{ $product->subtitle }}">
                 </div>
 
-                <div class="form-group">
-                    <label for="">Slug </label>
-                    <input type="text" name="slugy" value="{{ $product->slugy }}">
-                </div>
 
                 <div class="form-group">
                     <label for="">Description</label>
@@ -39,8 +35,33 @@
                     <img src="{{ asset('/img/'. $product->image) }}" alt="">
 
                     <input type="file" name="image" value="{{ $product->image }}">
-
                 </div>
+
+
+                <div class="form-group">
+                    <h3>Seo</h3>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Slug </label>
+                    <input type="text" name="slugy" value="{{ $product->slugy }}">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Balise alt de l'image </label>
+                    <input type="text" name="balise_alt" value="{{ $product->balise_alt }}">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Balise meta titre </label>
+                    <input type="text" name="meta_title" value="{{ $product->meta_title }}">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Meta Description</label>
+                    <textarea type="text" name="meta_description">{{ $product->meta_description }}</textarea>
+                </div>
+
 
                 <button class="btn-grad-product" type="submit">Valider</button>
             </form>

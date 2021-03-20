@@ -20,8 +20,11 @@ class CreateProductsTable extends Migration
             $table->string('slug')->nullable();
             $table->string('subtitle')->nullable();
             $table->string('image')->nullable();
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->integer('price');
+            $table->string('meta_title')->nullable();
+            $table->text('meta_description')->nullable();
+            $table->string('balise_alt')->nullable();
             $table->timestamps();
         });
     }
