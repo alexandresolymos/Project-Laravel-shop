@@ -25,6 +25,7 @@ class CreateProductsTable extends Migration
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
             $table->string('balise_alt')->nullable();
+            $table->unsignedBigInteger('category_id')->index();
             $table->timestamps();
         });
     }

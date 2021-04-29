@@ -22,4 +22,8 @@ class Product extends Model
         'balise_alt'
 
     ];
+
+    public function categoryId(){
+        return $this->belongsTo('App\Category');
+    }
 }

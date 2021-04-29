@@ -19,11 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7ef47f0-3f21-423e-948a-b61ddf472c31" name="Default Changelist" comment="Fixt : Ajout des balises SEO">
+    <list default="true" id="c7ef47f0-3f21-423e-948a-b61ddf472c31" name="Default Changelist" comment="Fixt : Modification image lors de l'update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/915c8f25ae93dc43326fe22f37db2e7a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_04_174809_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_04_174809_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_20_103920_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_20_103920_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/tifly.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/respi.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +200,13 @@
       <workItem from="1615487729417" duration="49453000" />
       <workItem from="1615652202662" duration="156000" />
       <workItem from="1615727415865" duration="81061000" />
-      <workItem from="1616087308608" duration="22753000" />
+      <workItem from="1616087308608" duration="31003000" />
+      <workItem from="1616433010119" duration="2373000" />
+      <workItem from="1616699028716" duration="2230000" />
+      <workItem from="1618757399197" duration="1440000" />
+      <workItem from="1619363937174" duration="3622000" />
+      <workItem from="1619719470528" duration="6000" />
+      <workItem from="1619719514881" duration="3504000" />
     </task>
     <task id="LOCAL-00001" summary="Fixt : Add Checkout with stripe&#10;       - Add image to Product">
       <created>1616088308254</created>
@@ -268,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616236185161</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixt : Modification image lors de l'update">
+      <created>1616242678050</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1616242678050</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +301,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixt : Add Checkout with stripe&#10;       - Add image to Product" />
@@ -291,7 +309,8 @@
     <MESSAGE value="Fixt : Commentaire pour mieux comprendre le code" />
     <MESSAGE value="Fixt : Upload image" />
     <MESSAGE value="Fixt : Ajout des balises SEO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixt : Ajout des balises SEO" />
+    <MESSAGE value="Fixt : Modification image lors de l'update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixt : Modification image lors de l'update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="510" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615807215219">
@@ -322,10 +341,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1615821273122" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616236187492">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616254246234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616236187492" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616254246234" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1615734034851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
