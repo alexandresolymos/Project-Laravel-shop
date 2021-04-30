@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,6 +58,12 @@ Route::prefix('admin')->middleware('admin')->group(function(){
     Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('admin.product.edit');
     Route::put('/product/{product}/update', [ProductController::class, 'update'])->name('admin.product.update');
 
+    // CRUD admin categorie vue
+    Route::get('/category', [CategoryController::class, 'category'])->name('admin.category.index');
+    Route::get('/category/create', [CategoryController::class, 'create'])->name('admin.category.create');
+    Route::post('/category/store', [CategoryController::class, 'store'])->name('admin.category.store');
+
+
     // RUD admin payment stripe
     Route::get('/payment', [CheckoutController::class, 'payment'])->name('admin.payment.index');
     Route::get('/payment/create', [CheckoutController::class, 'create'])->name('admin.payment.create');
@@ -68,8 +75,6 @@ Route::prefix('admin')->middleware('admin')->group(function(){
 
 
 });
-
-
 
 
 Route::get('/clear-cache', function() {
