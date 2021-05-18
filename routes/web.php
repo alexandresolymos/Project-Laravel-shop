@@ -59,7 +59,7 @@ Route::prefix('admin')->middleware('admin')->group(function(){
     Route::put('/product/{product}/update', [ProductController::class, 'update'])->name('admin.product.update');
 
     // CRUD admin categorie vue
-    Route::get('/category', [CategoryController::class, 'category'])->name('admin.category.index');
+    Route::get('/category', [CategoryController::class, 'index'])->name('admin.category.index');
     Route::get('/category/create', [CategoryController::class, 'create'])->name('admin.category.create');
     Route::post('/category/store', [CategoryController::class, 'store'])->name('admin.category.store');
 
