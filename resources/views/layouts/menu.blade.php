@@ -1,52 +1,41 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Accueil</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/articles"><i class="fi fi-home"></i>
-                        Article</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('cart.index') }}">Cart
-                    @if(Cart::instance('default')->count() > 0)
-                    <span>{{ Cart::instance('default')->count() }}</span>
-                        @endif</a>
-                </li>
 
-            </ul>
-
-            <ul class="navbar-nav ml-auto">
-                @if (Auth::user())
-                    @if (Auth::user()->role === 'ADMIN')
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.index') }}">Admin</a>
-                        </li>
-                    @endif
-
-
-                    <li class="nav-item">
-                        <form action="{{ route('logout') }}" method="POST">
-                            @csrf
-                            <button type="submit" class="btn">Deconnexion</button></form>
+    <nav class="navbar dark-mode" role="navigation">
+        <div class="navbar__logo"><a href=""><img src="https://shtheme.com/preview/orgafe/img/logo/logo.png" alt=""></a>
+        </div>
+        <ul class="navbar__links">
+            <li class="navbar__link"><a href="index.html">Accueil</a></li>
+            <li class="navbar__link"><a href="category.html">Services</a></li>
+            <li class="navbar__link"><a href="#">Missions</a></li>
+            <li class="navbar__link"><a href="#">Portfolio</a></li>
+            @if (Auth::user())
+                @if (Auth::user()->role === 'ADMIN')
+                    <li class="navbarmark">
+                        <a href="{{ route('admin.index') }}">Admin</a>
                     </li>
-                @else
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">Connexion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">inscription</a>
-                    </li>
-
                 @endif
 
+                <li class="navbar__link">
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn">Deconnexion</button>
+                    </form>
+                </li>
+            @else
 
-            </ul>
+                <li class="navbarmark">
+                    <a class="nav-link" href="{{ route('login') }}">Connexion</a>
+                </li>
+                <li class="navbarmark">
+                    <a class="nav-link" href="{{ route('register') }}">inscription</a>
+                </li>
 
+            @endif
+            <li class="navbarmark"><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <span class="bar"></span>
         </div>
-    </div>
-</nav>
+    </nav>
+
+
+
