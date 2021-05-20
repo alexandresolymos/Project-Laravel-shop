@@ -24,9 +24,8 @@
 
                 <li class="navbarmark">
                     <a class="nav-link" href="{{ route('login') }}">Connexion</a>
-                </li>
-                <li class="navbarmark">
                     <a class="nav-link" href="{{ route('register') }}">inscription</a>
+
                 </li>
 
             @endif
