@@ -39,7 +39,12 @@ class CategoryController extends Controller
      */
     public function store(CategoryRequest $request)
     {
-        //
+        Category::create([
+            'title' => $request->input('title'),
+            'slugy' => $request->input('slugy'),
+        ]);
+
+        return redirect()->route('');
     }
 
     /**
@@ -48,9 +53,9 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Category $category)
     {
-        //
+        return view('category', compact('category'));
     }
 
     /**
@@ -59,9 +64,10 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Category $category)
     {
-        //
+        return view('admin.category.edit', compact('category'),
+        );
     }
 
     /**
@@ -71,9 +77,15 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Category $category)
     {
-        //
+        $category->title = $request->input('title');
+        $category->slugy = $request->input('slugy');
+        $category->save();
+
+        return redirect()->route('admin.category.index')->with(
+            'success', "L'article à été modifier"
+        );
     }
 
     /**
@@ -84,6 +96,7 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+        return redirect()->route('admin.category.index')->with('success',"Categorie bien supprimé");
     }
 }
