@@ -1,6 +1,12 @@
 @extends('layouts.master')
 
 @section('content')
+    <div class="block">
+        <h1>Categorie liste</h1>
+        @foreach($categories as $category)
+            <li><a href="">{{ $category->title }} - {{ count($category->product) }}</a></li>
+        @endforeach
+    </div>
 
     @foreach($product as $products)
 

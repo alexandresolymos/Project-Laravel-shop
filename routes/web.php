@@ -22,7 +22,7 @@ use App\Http\Controllers\CategoryController;
 Route::get('/', [ProductController::class, 'random'])->name('home');
 
 // Shop
-Route::get('/shop', [ProductController::class, 'indextwo'])->name('shop.index');
+Route::get('/shop', [ProductController::class, 'indexshop'])->name('shop.index');
 Route::get('/shop/{product:slug}', [ProductController::class, 'show'])->name('shop.show');
 Route::get('/cart/reset', [CartController::class, 'reset'])->name('cart.reset');
 Route::delete('/cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');

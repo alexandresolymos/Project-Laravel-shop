@@ -25,6 +25,10 @@
                      </div>
 
                      <div class="form-group">
+                         <label for="">Categorie</label>
+                     </div>
+
+                     <div class="form-group">
                      <label for="">Slug</label>
                      <input type="text" name="slugy" placeholder="Mon slug ">
                      @error('slugy')

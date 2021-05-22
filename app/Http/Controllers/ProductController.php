@@ -51,10 +51,14 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function indextwo()
+    public function indexshop()
     {
         $product = Product::all();
-        return view('shop', compact('product'));
+        $categories = Category::all();
+        return view('shop', [
+            'product' => $product,
+            'categories' => $categories
+        ]);
     }
 
     /**
