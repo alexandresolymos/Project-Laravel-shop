@@ -1,8 +1,10 @@
 @extends('layouts.admin')
 
 @section('content')
-        <div class="content-header">
-            <a href="{{route('admin.product.create')}}" class="btn-grad">Ajouter un produit</a>
+        <div class="content-header" style="flex-direction: column">
+            <div class="add">
+                <a href="{{route('admin.product.create')}}" class="btn-grad">Ajouter un produit</a>
+            </div>
 
             <div class="container-all">
                 <div class="row">

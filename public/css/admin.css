@@ -159,6 +159,10 @@ a.active {
     max-width: 95%;
     margin: auto;
 }
+
+.add {
+    width: 25%;
+}
 .nav-footer {
     margin-top: 3em;
     text-align: center;

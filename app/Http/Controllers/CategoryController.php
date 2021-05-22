@@ -20,6 +20,11 @@ class CategoryController extends Controller
         return view('admin.category.index', compact('category'));
     }
 
+    public function indextwo()
+    {
+        $category = Category::all();
+        return view('categorys', compact('category'));
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -39,13 +44,13 @@ class CategoryController extends Controller
      */
     public function store(CategoryRequest $request)
     {
-        Category::create([
+         Category::create([
             'title' => $request->input('title'),
             'slugy' => $request->input('slugy'),
         ]);
-
-        return redirect()->route('');
+        return redirect()->route('admin.category.index');
     }
+
 
     /**
      * Display the specified resource.

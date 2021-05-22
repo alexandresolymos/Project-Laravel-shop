@@ -27,6 +27,10 @@ Route::get('/shop/{product:slug}', [ProductController::class, 'show'])->name('sh
 Route::get('/cart/reset', [CartController::class, 'reset'])->name('cart.reset');
 Route::delete('/cart/{product}', [CartController::class, 'destroy'])->name('cart.destroy');
 
+// Category
+
+Route::get('/categorys', [CategoryController::class, 'indextwo'])->name('category.index');
+Route::get('/categorys/{category:slug}', [CategoryController::class, 'show'])->name('category.show');
 
 //cart
 Route::get('/cart', [CartController::class, 'index'])->name('cart.index')->middleware('auth');
@@ -62,6 +66,11 @@ Route::prefix('admin')->middleware('admin')->group(function(){
     Route::get('/category', [CategoryController::class, 'index'])->name('admin.category.index');
     Route::get('/category/create', [CategoryController::class, 'create'])->name('admin.category.create');
     Route::post('/category/store', [CategoryController::class, 'store'])->name('admin.category.store');
+
+    // CRUD admin category avec id
+    Route::delete('/category/{category}/delete', [CategoryController::class, 'destroy'])->name('admin.category.delete');
+    Route::get('/category/{category}/edit', [CategoryController::class, 'edit'])->name('admin.category.edit');
+    Route::put('/category/{category}/update', [CategoryController::class, 'update'])->name('admin.category.update');
 
 
     // RUD admin payment stripe
