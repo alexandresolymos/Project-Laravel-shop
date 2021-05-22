@@ -13,6 +13,7 @@
         <img src="{{ asset('/img/'. $product->image) }}" alt="{{ $product->balise_alt }}">
 
         <p>Description : {{ $product->description }}</p>
+        <p>Categorie : {{$category->title}}</p>
         <p>Prix : {{ $product->price }}</p>
         <p class="lead">
         <form action="{{ route('cart.store') }}" method="POST">

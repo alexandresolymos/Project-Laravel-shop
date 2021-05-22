@@ -105,7 +105,8 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        return view('product', compact('product'));
+        $category = Category::where('id', $product->category_id)->firstOrFail();
+        return view('product', compact('product', 'category'));
 
     }
 
