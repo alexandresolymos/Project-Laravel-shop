@@ -27,7 +27,10 @@
                 <div class="navbar-header">
                     <div class="col-10-m">
                             <div class="logo" style="width:10rem;">
-                                <img src="img\addis.svg" alt="tt">
+                                <a href="{{ route('home') }}">
+                                    <img src="\img\addis.svg" alt="tt">
+
+                                </a>
                             </div>
                     </div>
                     <div class="col-2-m">

@@ -18,7 +18,9 @@
 <header id="main-header">
     <div class="header_logo">
         <div class="logo" style="width:10rem;">
-            <img src="img\addis.svg" alt="tt">
+            <a href="{{ route('home') }}">
+                <img src="\img\addis.svg" alt="tt">
+            </a>
         </div>
     </div>
 
