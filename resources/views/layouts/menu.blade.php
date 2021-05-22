@@ -1,6 +1,6 @@
 
     <nav class="navbar dark-mode" role="navigation">
-        <div class="navbar__logo"><a href=""><img src="https://shtheme.com/preview/orgafe/img/logo/logo.png" alt=""></a>
+        <div class="navbar__logo"><a href=""></a>
         </div>
         <ul class="navbar__links">
             <li class="navbar__link"><a href="index.html">Accueil</a></li>

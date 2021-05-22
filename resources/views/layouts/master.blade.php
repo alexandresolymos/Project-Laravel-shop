@@ -21,8 +21,20 @@
 <body>
 
 
-        <div class="container">
-            @include('layouts.menu')
+        <div class="container-all">
+
+            <div class="row">
+                <div class="navbar-header">
+                    <div class="col-10-m">
+                            <div class="logo" style="width:10rem;">
+                                <img src="img\addis.svg" alt="">
+                            </div>
+                    </div>
+                    <div class="col-2-m">
+                    @include('layouts.menu')
+                    </div>
+                </div>
+            </div>
 
         </div>
     @yield('content')

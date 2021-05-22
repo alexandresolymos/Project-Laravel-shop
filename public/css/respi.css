@@ -10,6 +10,10 @@
     margin-right: auto;
 }
 
+.mgt-5{
+    margin-top: 5rem;
+}
+
 .row {
     position: relative;
     width: 100%;
@@ -434,10 +438,17 @@
 }
 
 .navbarmark {
+
     margin: 1em;
     list-style-type: none;
 }
 
+.navbar-header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 0 1em 0 1em;
+}
 
 /* CSS AUTH */
 
