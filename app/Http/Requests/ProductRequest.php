@@ -29,7 +29,8 @@ class ProductRequest extends FormRequest
             'slugy' => 'required',
             'description' => 'required',
             'price' => 'required',
-            'image' => 'required|image|mimes:jpg,jpeg,png,gif'
+            'image' => 'required|image|mimes:jpg,jpeg,png,gif',
+            'category_id' => 'required'
         ];
     }
 }

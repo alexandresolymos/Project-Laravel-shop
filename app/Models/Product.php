@@ -17,9 +17,10 @@ class Product extends Model
       'slugy',
       'fullpath',
       'image',
-        'meta_title',
-        'meta_description',
-        'balise_alt'
+      'meta_title',
+      'meta_description',
+      'balise_alt',
+      'category_id'
 
     ];
 
