@@ -27,7 +27,7 @@
                 <div class="navbar-header">
                     <div class="col-10-m">
                             <div class="logo" style="width:10rem;">
-                                <img src="img\addis.svg" alt="">
+                                <img src="img\addis.svg" alt="tt">
                             </div>
                     </div>
                     <div class="col-2-m">

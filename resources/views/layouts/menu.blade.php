@@ -14,7 +14,7 @@
                     </li>
                 @endif
 
-                <li class="navbar__link">
+                <li class="navbarmark">
                     <form action="{{ route('logout') }}" method="POST">
                         @csrf
                         <button type="submit" class="btn">Deconnexion</button>

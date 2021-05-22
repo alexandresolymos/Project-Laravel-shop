@@ -17,7 +17,9 @@
 </div>
 <header id="main-header">
     <div class="header_logo">
-        <a href="#">Logo</a>
+        <div class="logo" style="width:10rem;">
+            <img src="img\addis.svg" alt="tt">
+        </div>
     </div>
 
     <nav id="sidenav">

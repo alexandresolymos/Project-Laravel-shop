@@ -8,6 +8,8 @@
              <div class="form-admin">
                  <form method="POST" action="{{ route('admin.product.store') }}" enctype="multipart/form-data">
                      @csrf
+
+
                      <div class="form-group">
                      <label for="">Titre</label>
                      <input type="text" name="title" placeholder="Mon titre ici">
