@@ -71,8 +71,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $categories = Category::pluck('id', 'title');
-        return view('admin.product.create', ['categories' => $categories]);
+        
+        return view('admin.product.create');
     }
 
     /**
@@ -81,7 +81,7 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ProductRequest $request, Category $category)
+    public function store(ProductRequest $request)
     {
 
         $fileName = null;
@@ -100,7 +100,6 @@ class ProductController extends Controller
            'meta_title' => $request->input('meta_title'),
            'meta_description' => $request->input('meta_description'),
            'image' => $fileName,
-
         ]);
         return redirect()->route('admin.product.index');
     }

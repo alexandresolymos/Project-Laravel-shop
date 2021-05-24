@@ -20,7 +20,7 @@
 
                      <select name="category_id" id="">
                          @foreach( $categories as $category)
-                             <option value="{{ $category->title }}"> {{ $category->title }}</option>
+                             <option value="{{ $category->id }}"> {{ $category->title }}</option>
                          @endforeach
                      </select>
 
