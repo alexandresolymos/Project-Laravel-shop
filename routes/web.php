@@ -72,7 +72,6 @@ Route::prefix('admin')->middleware('admin')->group(function(){
     Route::get('/category/{category}/edit', [CategoryController::class, 'edit'])->name('admin.category.edit');
     Route::put('/category/{category}/update', [CategoryController::class, 'update'])->name('admin.category.update');
 
-
     // RUD admin payment stripe
     Route::get('/payment', [CheckoutController::class, 'payment'])->name('admin.payment.index');
     Route::get('/payment/create', [CheckoutController::class, 'create'])->name('admin.payment.create');
