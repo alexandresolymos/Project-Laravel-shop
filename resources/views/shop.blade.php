@@ -4,12 +4,12 @@
     <div class="block">
         <h1>Categorie liste</h1>
         @foreach($categories as $category)
-            <li><a href="">{{ $category->title }} - {{ count($category->product) }}</a></li>
+            <li><a href="{{ route('category.show', $category->slug ) }}">{{ $category->title }} -
+                    {{ $count }}</a></li>
         @endforeach
     </div>
 
     @foreach($product as $products)
-
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">

@@ -55,9 +55,12 @@ class ProductController extends Controller
     {
         $product = Product::all();
         $categories = Category::all();
+        $count = $product->count();
+
         return view('shop', [
             'product' => $product,
-            'categories' => $categories
+            'categories' => $categories,
+            'count' => $count
         ]);
     }
 
@@ -68,7 +71,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.product.create');
+        $categories = Category::pluck('id', 'title');
+        return view('admin.product.create', ['categories' => $categories]);
     }
 
     /**
@@ -77,7 +81,7 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ProductRequest $request)
+    public function store(ProductRequest $request, Category $category)
     {
 
         $fileName = null;
@@ -96,19 +100,19 @@ class ProductController extends Controller
            'meta_title' => $request->input('meta_title'),
            'meta_description' => $request->input('meta_description'),
            'image' => $fileName,
-        ]);
 
+        ]);
         return redirect()->route('admin.product.index');
     }
 
     /**
      * Display the specified resource.
-     *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show(Product $product)
     {
+
         $category = Category::where('id', $product->category_id)->firstOrFail();
         return view('product', compact('product', 'category'));
 

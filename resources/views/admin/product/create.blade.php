@@ -18,6 +18,12 @@
                      @enderror
                      </div>
 
+                     <select name="category_id" id="">
+                         @foreach( $categories as $category)
+                             <option value="{{ $category->title }}"> {{ $category->title }}</option>
+                         @endforeach
+                     </select>
+
                      <div class="form-group">
                      <label for="">Sous Titre</label>
                      <input type="text" name="subtitle" placeholder="Mon sous titre ">
