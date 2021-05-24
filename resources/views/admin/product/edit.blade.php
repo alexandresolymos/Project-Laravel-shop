@@ -14,6 +14,16 @@
                     <input type="text" name="title" value="{{ $product->title }}">
                 </div>
 
+                <select name="category_id" id="">
+                    @foreach( $categories as $category)
+                        <option value="{{ $category->id }}"
+                        @if($category->id === $product->category_id)
+                            selected
+                        @endif
+                        > {{ $category->title }}</option>
+                    @endforeach
+                </select>
+
                 <div class="form-group">
                     <label for="">Sous Titre</label>
                     <input type="text" name="subtitle" value="{{ $product->subtitle }}">

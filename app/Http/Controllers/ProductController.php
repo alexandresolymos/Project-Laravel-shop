@@ -40,7 +40,7 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function product()
+    public function showadmin()
     {
         $product = Product::all()->reverse();
         return view('admin.product.index', compact('product'));
@@ -71,8 +71,10 @@ class ProductController extends Controller
      */
     public function create()
     {
-        
-        return view('admin.product.create');
+        $categories = Category::all();
+        return view('admin.product.create', [
+            'categories' => $categories,
+        ]);
     }
 
     /**
@@ -92,6 +94,7 @@ class ProductController extends Controller
         }
        Product::create([
            'title' => $request->input('title'),
+           'category_id' => $request->input('category_id'),
            'slugy' => $request->input('slugy'),
            'subtitle' => $request->input('subtitle'),
            'description' => $request->input('description'),
@@ -126,7 +129,11 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        return view('admin.product.edit', compact('product'));
+        $categories = Category::all();
+        return view('admin.product.edit', [
+            'product' => $product,
+            'categories' => $categories,
+        ]);
     }
 
     /**
@@ -156,6 +163,7 @@ class ProductController extends Controller
         }
 
         $product->title = $request->input('title');
+        $product->category_id = $request->input('category_id');
         $product->subtitle = $request->input('subtitle');
         $product->slugy = $request->input('slugy');
         $product->slug = Str::slug($product->slugy, '-');

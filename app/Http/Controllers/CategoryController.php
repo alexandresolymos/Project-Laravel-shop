@@ -89,7 +89,7 @@ class CategoryController extends Controller
         $category->save();
 
         return redirect()->route('admin.category.index')->with(
-            'success', "L'article à été modifier"
+            'success', "La catégorie à été modifier"
         );
     }
 

@@ -30,7 +30,7 @@ Route::delete('/cart/{product}', [CartController::class, 'destroy'])->name('cart
 // Category
 
 Route::get('/categorys', [CategoryController::class, 'indextwo'])->name('category.index');
-Route::get('/categorys/{category:slug}', [CategoryController::class, 'show'])->name('category.show');
+Route::get('/{category:slug}', [CategoryController::class, 'show'])->name('category.show');
 
 //cart
 Route::get('/cart', [CartController::class, 'index'])->name('cart.index')->middleware('auth');
@@ -53,7 +53,7 @@ Route::prefix('admin')->middleware('admin')->group(function(){
     Route::get('/', [ProductController::class, 'index'])->name('admin.index');
 
     // CRUD admin produit vue
-    Route::get('/product', [ProductController::class, 'product'])->name('admin.product.index');
+    Route::get('/product', [ProductController::class, 'showadmin'])->name('admin.product.index');
     Route::get('/product/create', [ProductController::class, 'create'])->name('admin.product.create');
     Route::post('/product/store', [ProductController::class, 'store'])->name('admin.product.store');
 
