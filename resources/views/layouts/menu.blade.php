@@ -3,7 +3,7 @@
         <div class="navbar__logo"><a href=""></a>
         </div>
         <ul class="navbar__links">
-            <li class="navbar__link"><a href="{{ route('home') }}"></a></li>
+            <li class="navbar__link"><a href="{{ route('home') }}">Accueil</a></li>
             <li class="navbar__link"><a href="category.html">Services</a></li>
             <li class="navbar__link"><a href="#">Missions</a></li>
             <li class="navbar__link"><a href="#">Portfolio</a></li>
