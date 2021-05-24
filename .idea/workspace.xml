@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7ef47f0-3f21-423e-948a-b61ddf472c31" name="Default Changelist" comment="Fixt : Modification Update">
-      <change afterPath="$PROJECT_DIR$/public/img/e1c3ecdb3644a6312b9ecce978b8b42a.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/menu.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +211,7 @@
       <workItem from="1621534871627" duration="3488000" />
       <workItem from="1621627896384" duration="37577000" />
       <workItem from="1621865518247" duration="2848000" />
-      <workItem from="1621882292138" duration="64000" />
+      <workItem from="1621882292138" duration="752000" />
     </task>
     <task id="LOCAL-00001" summary="Fixt : Add Checkout with stripe&#10;       - Add image to Product">
       <created>1616088308254</created>
