@@ -92,17 +92,17 @@ class ProductController extends Controller
             $fileName = md5($image->getClientOriginalName() . time()) . "." . $image->getClientOriginalExtension();
             $image->move('./img/', $fileName);
         }
-       Product::create([
-           'title' => $request->input('title'),
-           'category_id' => $request->input('category_id'),
-           'slugy' => $request->input('slugy'),
-           'subtitle' => $request->input('subtitle'),
-           'description' => $request->input('description'),
-           'price' => $request->input('price'),
-           'balise_alt' => $request->input('balise_alt'),
-           'meta_title' => $request->input('meta_title'),
-           'meta_description' => $request->input('meta_description'),
-           'image' => $fileName,
+        Product::create([
+            'title' => $request->input('title'),
+            'category_id' => $request->input('category_id'),
+            'slugy' => $request->input('slugy'),
+            'subtitle' => $request->input('subtitle'),
+            'description' => $request->input('description'),
+            'price' => $request->input('price'),
+            'balise_alt' => $request->input('balise_alt'),
+            'meta_title' => $request->input('meta_title'),
+            'meta_description' => $request->input('meta_description'),
+            'image' => $fileName,
         ]);
         return redirect()->route('admin.product.index');
     }
