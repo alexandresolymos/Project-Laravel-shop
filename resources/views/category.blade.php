@@ -4,8 +4,14 @@
 
 @section('content')
     <div class="jumbotron">
-        <h1 class="display-4">{{ $category->title }}</h1>
 
+        @foreach ($products as $product)
+
+            <p>{{$product->title}}</p>
+            <p class="card-text">{{ $product->subtitle }}</p>
+            <p class="card-text">{{ $product->price }}€</p>
+            <a href="{{ route('shop.show', $product->slug  ) }}" class="btn btn-primary">Go somewhere</a>
+        @endforeach
     </div>
 @stop
 

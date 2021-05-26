@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CategoryRequest;
 use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -44,7 +45,7 @@ class CategoryController extends Controller
      */
     public function store(CategoryRequest $request)
     {
-         Category::create([
+        Category::create([
             'title' => $request->input('title'),
             'slugy' => $request->input('slugy'),
         ]);

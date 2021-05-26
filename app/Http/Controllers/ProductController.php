@@ -120,6 +120,14 @@ class ProductController extends Controller
 
     }
 
+    public function testrelation(Category $category){
+
+
+        $products = $category->products;
+
+        return view('category', compact( 'products'));
+    }
+
 
     /**
      * Show the form for editing the specified resource.
