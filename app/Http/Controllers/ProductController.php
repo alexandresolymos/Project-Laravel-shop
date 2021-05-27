@@ -57,6 +57,7 @@ class ProductController extends Controller
         $categories = Category::all();
         $count = $product->count();
 
+
         return view('shop', [
             'product' => $product,
             'categories' => $categories,
