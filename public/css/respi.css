@@ -9,6 +9,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+.container-bis {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .mgt-5{
     margin-top: 5rem;
@@ -89,6 +94,9 @@
 
 @media only screen and (min-width: 33.75em) {  /* 540px */
     .container {
+        width: 90%;
+    }
+    .container-bis {
         width: 95%;
     }
 }
@@ -152,8 +160,11 @@
 
 @media only screen and (min-width: 60em) { /* 960px */
     .container {
-        width: 85%;
         max-width: 62rem;
+    }
+
+    .container-bis {
+        max-width: 72rem;
     }
 
     .col-1 {
@@ -513,4 +524,16 @@
     background-color: #fff;
     border: 1px solid #000;
     color:#000;
+}
+
+.br-title {
+    text-transform: capitalize;
+    margin: 5em 16px 17px 4px;
+}
+
+.block-right-other {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

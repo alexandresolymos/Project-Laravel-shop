@@ -7,19 +7,21 @@
 
 @section('content')
 
-   <div class="container-all">
+   <div class="container-bis">
         <div class="row">
 
-            <div class="col-6-t">
-                <div class="block-left-image">
-                    <img width="100%" src="{{ asset('/img/'. $product->image) }}" alt="{{ $product->balise_alt }}">
+
+                <div class="col-6-t">
+                    <div class="block-left-image">
+                        <img width="100%" src="{{ asset('/img/'. $product->image) }}" alt="{{ $product->balise_alt }}">
+                    </div>
                 </div>
-            </div>
+
 
 
             <div class="col-6-t">
                 <div class="block-right-other">
-                    <h1 class="display-4">{{ $product->title }}</h1>
+                    <h1 class="br-title">{{ $product->title }}</h1>
                     <p class="lead">  <p>{{ $product->subtitle }}</p>
                     <hr class="my-4">
 
