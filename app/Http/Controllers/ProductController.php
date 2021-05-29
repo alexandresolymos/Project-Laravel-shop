@@ -121,11 +121,9 @@ class ProductController extends Controller
 
     }
 
-    public function testrelation(Category $category){
-
+    public function productctg(Category $category){
 
         $products = $category->products;
-
         return view('category', compact( 'products'));
     }
 

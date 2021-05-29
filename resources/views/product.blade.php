@@ -17,8 +17,6 @@
                     </div>
                 </div>
 
-
-
             <div class="col-6-t">
                 <div class="block-right-other">
                     <h1 class="br-title">{{ $product->title }}</h1>
