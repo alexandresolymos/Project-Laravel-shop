@@ -14,8 +14,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="h2-block">
-                    <h2>{{ $product->title }}</h2>
+                <div class="h1-block">
+                    <h1>{{ $product->title }}</h1>
+                    <h2 style="text-align: center;font-weight: 300;font-size: 16px">{{ $product->subtitle }}</h2>
                 </div>
             </div>
         </div>

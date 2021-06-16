@@ -297,12 +297,27 @@
     text-decoration: none;
 }
 
+.h1-block h1{
+    text-align: center;
+    font-weight: 300;
+    padding: 1em 0 1em 0;
+    text-transform: capitalize;
+}
 .h2-block h2 {
     text-align: center;
     font-weight: 300;
     padding: 1em 0 1em 0;
     text-transform: capitalize;
 }
+
+.h2-block h3 {
+    text-align: center;
+    font-weight: 300;
+    padding: 1em 0 1em 0;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
 
 /* MENU */
 .navbar {
@@ -546,12 +561,12 @@
 }
 
 .product-first-block {
-    min-height: 400px;
-    box-shadow: inset 0px -7px 68px 0px #CACACA;
+    min-height: 300px;
+    box-shadow: inset 0px -7px 68px 0px #0000004f;
     margin-bottom: 3em;
     background-repeat: no-repeat;
-    background-position: center 33%;
-    background-size: 24%;
+    background-position: center;
+    background-size: cover;
 }
 
 /* HOME PAGE  */
