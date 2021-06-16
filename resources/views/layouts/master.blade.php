@@ -72,9 +72,12 @@
                   <div class="col-4 fp">
                       <div class="right-footer">
                             <ul>
-                                <li><a href="#"></a>Contact</li>
+                                <li><a href="#">Contact</a></li>
                                 <li><a href="{{ route('login') }}">Connexion</a></li>
                                 <li><a href="{{ route('register') }}">Inscription</a></li>
+                                <li><a href="#">CGV</a></li>
+                                <li><a href="#">CGU</a></li>
+                                <li><a href="#">Mentions légales</a></li>
                             </ul>
                       </div>
                   </div>

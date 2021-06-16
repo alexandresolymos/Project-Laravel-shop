@@ -19,6 +19,10 @@
     margin-top: 5rem;
 }
 
+a:visited {
+    color:#db2d64;
+}
+
 .row {
     position: relative;
     width: 100%;
