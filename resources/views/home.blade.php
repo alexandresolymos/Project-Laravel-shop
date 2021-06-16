@@ -20,6 +20,9 @@
 
 
         <div class="col-12">
+            <div class="h2-block">
+                <h2>Nos services</h2>
+            </div>
             @foreach($categories as $category)
                     <div class="col-3 col-6-m">
                         <div class="category-space">
@@ -41,12 +44,14 @@
     </div>
 </div>
 
-<div class="container-all" id="section-three">
+<div class="container" id="section-three">
     <div class="row">
         <div class="col-12">
             <div class="col-6">
                <div class="left-section-three">
-ffff
+                    <div class="block-svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H11V7H17V13H21V21H13V17H7V11H3V3ZM15 13H13V15H9V11H11V9H15V13Z" fill="currentColor" /></svg>
+                    </div>
                </div>
             </div>
             <div class="col-6">

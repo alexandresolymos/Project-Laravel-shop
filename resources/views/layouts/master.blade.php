@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('meta_title')</title>
     <meta name="description" content="@yield('meta_description')" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap"
-          as="style" onload="this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;600;800&display=swap" rel="stylesheet">
     <link rel="canonical" href="{{ url()->current() }}" />
     <link rel="stylesheet" href="{{ asset('css/respi.css') }}">
     <script type="text/javascript" src="{{ asset('js/min.js') }}"></script>
