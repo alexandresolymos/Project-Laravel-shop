@@ -3,9 +3,36 @@
 @section('meta_title'){{ $product->meta_title }}@stop
 @section('meta_description'){{ $product->meta_description }}@stop
 
-
+<style>
+    .product-first-block {
+        background-image: url("{{ asset('/img/'. $product->image) }}");
+    }
+</style>
 
 @section('content')
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="h2-block">
+                    <h2>{{ $product->title }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-all">
+        <div class="row">
+
+
+            <div class="col-12">
+                <div class="product-first-block">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
    <div class="container-bis">
         <div class="row">

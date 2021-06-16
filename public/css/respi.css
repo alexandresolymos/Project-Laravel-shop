@@ -301,6 +301,7 @@
     text-align: center;
     font-weight: 300;
     padding: 1em 0 1em 0;
+    text-transform: capitalize;
 }
 
 /* MENU */
@@ -544,6 +545,14 @@
     justify-content: center;
 }
 
+.product-first-block {
+    min-height: 400px;
+    box-shadow: inset 0px -7px 68px 0px #CACACA;
+    margin-bottom: 3em;
+    background-repeat: no-repeat;
+    background-position: center 33%;
+    background-size: 24%;
+}
 
 /* HOME PAGE  */
 
@@ -551,12 +560,12 @@
     min-height: 400px;
     box-shadow: inset 0px -7px 68px 0px #CACACA;
     margin-bottom: 3em;
-    background-image: url("/img/addisgif.gif");
+    background-image: url("/img/addisgifwhite.gif");
     background-repeat: no-repeat;
     background-position: center 33%;
     background-size: 24%;
-
 }
+
 .category-block {
     box-shadow: 0 2px 40px rgb(0 0 0 / 8%);
     position: relative;
