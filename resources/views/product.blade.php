@@ -41,7 +41,7 @@
         <div class="row fp">
             <div class="col-4 fp">
                 <div class="description-product">
-                    <span>Categorie : {{$category->title}}</span>
+                    <span>Categorie :</span> <p><a href="{{ route('category.show', $category->slug ) }}">{{$category->title}}</a></p>
                 </div>
             </div>
             <div class="col-4 fp">
