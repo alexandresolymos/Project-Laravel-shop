@@ -21,7 +21,6 @@ class Product extends Model
       'meta_description',
       'balise_alt',
       'category_id'
-
     ];
 
     public function categoryId(){

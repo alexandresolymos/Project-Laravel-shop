@@ -64,6 +64,7 @@ class CategoryController extends Controller
         return view('category', compact('category'));
     }
 
+
     /**
      * Show the form for editing the specified resource.
      *

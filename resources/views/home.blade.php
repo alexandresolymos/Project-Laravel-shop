@@ -2,7 +2,61 @@
 
 
 @section('content')
-<h1>Page accueil</h1>
+
+<div class="container-all">
+    <div class="row">
+
+
+        <div class="col-12">
+                <div class="home-first-block">
+                </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-12">
+            @foreach($categories as $category)
+                    <div class="col-3 col-6-m">
+                        <div class="category-space">
+                            <div class="category-block">
+                                <a class="link-category" href="{{ route('category.show', $category->slug ) }}">
+                                    <img src="https://shtheme.com/preview/orgafe/img/demos/home1.jpg" alt="">
+                                    <span>Voir la Catégorie </span>
+                                </a>
+                            </div>
+                            <div class="category-text">
+                                <p>{{ $category->title }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            @endforeach
+        </div>
+
+    </div>
+</div>
+
+<div class="container-all" id="section-three">
+    <div class="row">
+        <div class="col-12">
+            <div class="col-6">
+               <div class="left-section-three">
+ffff
+               </div>
+            </div>
+            <div class="col-6">
+                <div class="right-section-three">
+jjj
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     @foreach($products as $product)
         <div class="card" style="width: 18rem;">
