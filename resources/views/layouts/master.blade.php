@@ -67,7 +67,6 @@
                   </div>
                   <div class="col-6 fp">
                       <div class="center-footer">
-                          <p>hello</p>
                       </div>
                   </div>
                   <div class="col-4 fp">
