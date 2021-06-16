@@ -43,14 +43,52 @@
     @yield('js')
 </body>
 
-<script>
-    function toggleMenu() {
-        const navbar = document.querySelector('.navbar');
-        const burger = document.querySelector('.burger');
-        burger.addEventListener('click', (e) => {
-            navbar.classList.toggle('show-nav');
-        });
-    }
-    toggleMenu();
-</script>
+<footer>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            const burger = document.querySelector('.burger');
+            burger.addEventListener('click', (e) => {
+                navbar.classList.toggle('show-nav');
+            });
+        }
+        toggleMenu();
+    </script>
+
+    <div class="container-all" id="footer">
+        <div class="row">
+
+          <div class="container fp">
+              <div class="row">
+                  <div class="col-2 fp">
+                      <div class="left-footer">
+                          <img src="/img/logo-white.png" alt="">
+                      </div>
+                  </div>
+                  <div class="col-6 fp">
+                      <div class="center-footer">
+                          <p>hello</p>
+                      </div>
+                  </div>
+                  <div class="col-4 fp">
+                      <div class="right-footer">
+                            <ul>
+                                <li><a href="#"></a>Contact</li>
+                                <li><a href="{{ route('login') }}">Connexion</a></li>
+                                <li><a href="{{ route('register') }}">Inscription</a></li>
+                            </ul>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+            </div>
+        <div class="copyright fp">
+            <p>Copyright 2021 © All rights Reserved. Réalisation <a href="">Alexandre Solymos</a>
+            </p>
+        </div>
+
+    </div>
+</footer>
 </html>

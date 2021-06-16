@@ -16,7 +16,10 @@
             <div class="col-12">
                 <div class="h1-block">
                     <h1>{{ $product->title }}</h1>
-                    <h2 style="text-align: center;font-weight: 300;font-size: 16px">{{ $product->subtitle }}</h2>
+                    <h2 style="text-align: center;
+                      font-weight: 300;
+                      font-size: 20px;
+                      padding-bottom: 1em">{{ $product->subtitle }}</h2>
                 </div>
             </div>
         </div>
@@ -34,27 +37,20 @@
         </div>
     </div>
 
-
-   <div class="container-bis">
-        <div class="row">
-
-
-                <div class="col-6-t">
-                    <div class="block-left-image">
-                        <img width="100%" src="{{ asset('/img/'. $product->image) }}" alt="{{ $product->balise_alt }}">
-                    </div>
+    <div class="container pb">
+        <div class="row fp">
+            <div class="col-4 fp">
+                <div class="description-product">
+                    <span>Categorie : {{$category->title}}</span>
                 </div>
-
-            <div class="col-6-t">
-                <div class="block-right-other">
-                    <h1 class="br-title">{{ $product->title }}</h1>
-                    <p class="lead">  <p>{{ $product->subtitle }}</p>
-                    <hr class="my-4">
-
-                    <p>Description : {{ $product->description }}</p>
-                    <p>Categorie : {{$category->title}}</p>
-                    <p>Prix : {{ $product->price }}</p>
-
+            </div>
+            <div class="col-4 fp">
+                <div class="info-product">
+                    <span>Prix : </span><p>{{ $product->price }} €</p>
+                </div>
+            </div>
+            <div class="col-4 fp">
+                <div class="add-cart-product">
                     <form action="{{ route('cart.store') }}" method="POST">
                         @csrf
                         <input type="hidden" name="id" value="{{ $product->id }}">
@@ -65,9 +61,23 @@
                     </form>
                 </div>
             </div>
-
         </div>
-   </div>
+    </div>
+
+    <div class="container" id="plus-product">
+        <div class="row">
+            <div class="col-6">
+                <div class="other-img">
+
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="description-product">
+                    <p>{{ $product->description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 @stop
 

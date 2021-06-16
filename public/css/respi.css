@@ -483,6 +483,17 @@
     margin: 0 1em 0 1em;
 }
 
+/* FOOTER */
+#footer {
+    background-color: #000;
+    color: #fff;
+    padding: 4em;
+}
+
+#footer a {
+    color: #fff;
+    font-weight: 600;
+}
 /* CSS AUTH */
 
 .border-shadow {
@@ -567,6 +578,25 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.info-product p{
+    font-size: 36px;
+}
+
+.fp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pb {
+    padding-bottom: 2em;
+}
+
+#plus-product {
+    padding: 2em 0 2em 0;
+    min-height: 350px;
 }
 
 /* HOME PAGE  */
