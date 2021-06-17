@@ -575,10 +575,6 @@
         font-weight: lighter;
     }
 
-    .left-footer img{
-        width: 100%;
-    }
-
 }
 
 @media only screen and (min-width: 60em) { /* 960px */
@@ -643,6 +639,8 @@
         padding-right: 5rem;
     }
 
+
+
 }
 
 @media only screen and (min-width: 75em) {
@@ -697,5 +695,10 @@
     .col-12-l {
         width: 100%;
     }
+
+    .left-footer img{
+        width: 100%;
+    }
+
 
 }
