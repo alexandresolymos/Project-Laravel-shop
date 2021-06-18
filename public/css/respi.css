@@ -503,12 +503,12 @@
     background-repeat: no-repeat;
     background-size: cover;}
 
-.right-section-three {
+.other-img {
+    min-height: 350px;
+    background-color: #000;
+    margin: 0em 1em 0em 1em;
 
 }
-
-
-
 /* RESPONSIVE */
 
 @media only screen and (min-width: 33.75em) {  /* 540px */
@@ -699,6 +699,5 @@
     .left-footer img{
         width: 100%;
     }
-
 
 }

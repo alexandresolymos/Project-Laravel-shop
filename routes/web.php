@@ -33,6 +33,7 @@ Route::delete('/cart/{product}', [CartController::class, 'destroy'])->name('cart
 Route::get('/categorys', [CategoryController::class, 'indextwo'])->name('category.index');
 Route::get('/categorys/{category:slug}', [ProductController::class, 'productctg'])->name('category.show');
 
+
 //cart
 Route::get('/cart', [CartController::class, 'index'])->name('cart.index')->middleware('auth');
 Route::post('/cart', [CartController::class, 'store'])->name('cart.store');
