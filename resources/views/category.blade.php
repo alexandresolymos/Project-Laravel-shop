@@ -19,19 +19,31 @@
     </div>
 
 
-    <div class="jumbotron">
 
-        @foreach ($products as $product)
+    <div class="container" style="padding-bottom: 2em">
+        <div class="row">
 
-            <p>{{$product->title}}</p>
-            <p class="card-text">{{ $product->subtitle }}</p>
-            <p class="card-text">{{ $product->price }}€</p>
-            <div class="img">
-                <img src="{{ asset('/img/'. $product->image) }}" alt="{{ $product->balise_alt }}" width="50%">
-            </div>
-            <a href="{{ route('shop.show', $product->slug  ) }}" class="btn btn-primary">Go somewhere</a>
-        @endforeach
+                @foreach ($products as $product)
+                    <div class="col-6">
+
+                        <div class="card-product">
+                            <div class="img">
+                                <img src="{{ asset('/img/'. $product->image) }}" alt="{{ $product->balise_alt }}" width="50%">
+                            </div>
+                        <div class="card-product-text">
+                            <p>{{$product->title}}</p>
+                            <p class="card-text">{{ $product->subtitle }}</p>
+                            <p class="card-text">{{ $product->price }}€</p>
+                            <a href="{{ route('shop.show', $product->slug  ) }}" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                @endforeach
+
+        </div>
     </div>
+
 @stop
 
 
