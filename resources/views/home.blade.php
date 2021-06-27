@@ -63,15 +63,35 @@ jjj
     </div>
 </div>
 
-    @foreach($products as $product)
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">{{ $product->title }}</h5>
-                <p class="card-text">{{ $product->subtitle }}</p>
-                <p class="card-text">{{ $product->price }}€</p>
-                <a href="{{ route('shop.show', $product->slug  ) }}" class="btn btn-primary">Go somewhere</a>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-12">
+            <div class="h2-block">
+                <h2>Services</h2>
             </div>
+            @foreach ($products as $product)
+                <div class="col-3 col-6-m">
+                    <div class="category-space">
+                        <div class="product-block" style="height: 230PX">
+                            <a class="link-category" href="{{ route('shop.show', $product->slug  ) }}">
+                                <img src="{{ asset('/img/'. $product->image) }}" alt="{{ $product->balise_alt }}" >
+                                <span class="card-text">{{ $product->price }}€</span>
+                            </a>
+                        </div>
+                        <div class="category-text">
+                            <p>{{ $product->title }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
         </div>
-        @endforeach
+
+
+    </div>
+</div>
+
 @stop
