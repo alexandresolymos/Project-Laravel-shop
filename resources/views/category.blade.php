@@ -34,10 +34,10 @@
                             <p>{{$product->title}}</p>
                             <p class="card-text">{{ $product->subtitle }}</p>
                             <p class="card-text">{{ $product->price }}€</p>
-                            <a href="{{ route('shop.show', $product->slug  ) }}" class="btn btn-primary">Go somewhere</a>
                         </div>
+                            <a href="{{ route('shop.show', $product->slug  ) }}" class="btn btn-primary-ctg">Découvre notre service</a>
                         </div>
-                        
+
                     </div>
                 @endforeach
 
