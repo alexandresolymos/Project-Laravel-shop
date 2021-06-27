@@ -10,7 +10,7 @@
 
             <div class="col-12">
                 <div class="h2-block">
-                    <h2>Nos produit de la categorie {{ basename(Request::url()) }}</h2>
+                    <h1>Nos produit de la categorie {{ basename(Request::url()) }}</h1>
                 </div>
                 @foreach ($products as $product)
                     <div class="col-6 col-12-m">
