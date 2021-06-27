@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="h1-block">
-                    <h1>Nos services </h1>
+                    <h1>Nos categorie </h1>
                     <h2 style="text-align: center;
                       font-weight: 300;
                       font-size: 20px;

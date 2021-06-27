@@ -4,29 +4,13 @@
 
 @section('content')
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="h1-block">
-                    <h1></h1>
-                    <h2 style="text-align: center;
-                      font-weight: 300;
-                      font-size: 20px;
-                      padding-bottom: 1em"></h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
     <div class="container" style="padding-bottom: 2em">
         <div class="row">
 
 
             <div class="col-12">
                 <div class="h2-block">
-                    <h2>Services</h2>
+                    <h2>Nos produit de la categorie {{ basename(Request::url()) }}</h2>
                 </div>
                 @foreach ($products as $product)
                     <div class="col-6 col-12-m">
