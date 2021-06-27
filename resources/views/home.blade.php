@@ -75,12 +75,12 @@ jjj
             @foreach ($products as $product)
                 <div class="col-3 col-6-m">
                     <div class="category-space">
+                        <a class="link-category" href="{{ route('shop.show', $product->slug  ) }}">
                         <div class="product-block" style="height: 230PX">
-                            <a class="link-category" href="{{ route('shop.show', $product->slug  ) }}">
                                 <img src="{{ asset('/img/'. $product->image) }}" alt="{{ $product->balise_alt }}" >
                                 <span class="card-text">{{ $product->price }}€</span>
-                            </a>
                         </div>
+                        </a>
                         <div class="category-text">
                             <p>{{ $product->title }}
                             </p>
