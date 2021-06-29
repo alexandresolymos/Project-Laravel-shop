@@ -38,18 +38,18 @@
     </div>
 
     <div class="container pb">
-        <div class="row fp">
-            <div class="col-4 fp">
+        <div class="row">
+            <div class="col-4 col-6-m fp">
                 <div class="description-product">
                     <span>Categorie :</span> <p><a href="{{ route('category.show', $category->slug ) }}">{{$category->title}}</a></p>
                 </div>
             </div>
-            <div class="col-4 fp">
+            <div class="col-4 col-6-m fp">
                 <div class="info-product">
                     <span>Prix : </span><p>{{ $product->price }} €</p>
                 </div>
             </div>
-            <div class="col-4 fp">
+            <div class="col-4 col-6-m  fp">
                 <div class="add-cart-product">
                     <form action="{{ route('cart.store') }}" method="POST">
                         @csrf
