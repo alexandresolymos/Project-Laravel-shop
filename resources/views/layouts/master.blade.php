@@ -20,7 +20,12 @@
 <body>
 
 
-        <div class="container-all">
+        <div class="container-all" style="    box-shadow: 0 2px 40px rgb(0 0 0 / 8%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;">
 
             <div class="row">
                 <div class="navbar-header">
