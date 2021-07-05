@@ -395,7 +395,7 @@
 #addcart {
     color: #fff;
     background-color: #000;
-    padding: 1em;
+    padding: 2.5em;
     text-decoration: none;
     cursor: pointer;
     border: 1px solid #000;
@@ -424,9 +424,24 @@
     background-position: center;
     background-size: cover;
 }
+
+.info-product {
+    background-color: #db2d64;
+    color: #fff;
+    padding: 1em;
+    border-radius: 1em 1em 1em 0;
+}
+
 .info-product p{
     font-size: 36px;
 }
+
+.description-product {
+    padding: 1.7em;
+    background-color: #ddd;
+    border-radius: 1em 1em 0 1em;
+}
+
 .description-product a{
     text-decoration: none;
     text-transform: capitalize;
