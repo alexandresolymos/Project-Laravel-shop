@@ -509,6 +509,8 @@
 .category-block {
     box-shadow: 0 2px 40px rgb(0 0 0 / 8%);
     position: relative;
+    min-height: 315px;
+    border-radius: 1em 1em 0 0;
 }
 .category-block span {
     -webkit-transition: all .5s cubic-bezier(.645,.045,.355,1);
@@ -538,6 +540,7 @@
 
 .category-block img {
     width: 100%;
+    border-radius: 1em 1em 0 0;
 }
 
 .category-text {
@@ -568,7 +571,11 @@
     background-color: #000;
     margin: 0em 1em 0em 1em;
 }
-
+.h2-block span {
+    text-transform: capitalize;
+    color: #db2d64;
+    font-size: 2rem;
+}
 /* RESPONSIVE */
 
 @media only screen and (min-width: 33.75em) {  /* 540px */

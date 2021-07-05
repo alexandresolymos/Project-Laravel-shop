@@ -4,16 +4,16 @@
 
 @section('content')
 
-    <div class="container" style="padding-bottom: 2em">
+    <div class="container mgt-5" style="padding-bottom: 2em">
         <div class="row">
 
 
             <div class="col-12">
                 <div class="h2-block">
-                    <h1>Nos produit de la categorie {{ basename(Request::url()) }}</h1>
+                    <h1 style="display: flex; flex-direction: column">Nos produit de la categorie <span>{{ basename(Request::url()) }}</span></h1>
                 </div>
                 @foreach ($products as $product)
-                    <div class="col-6 col-12-m mgt-5">
+                    <div class="col-6-t col-12-m mgt-5">
                         <div class="category-space">
                             <div class="category-block">
                                 <a class="link-category" href="{{ route('shop.show', $product->slug  ) }}">
