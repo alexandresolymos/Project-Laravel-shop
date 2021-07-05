@@ -65,7 +65,7 @@
 
           <div class="container fp">
               <div class="row">
-                  <div class="col-2 col-3-t col-12-m fp">
+                  <div class="col-2 col-3-t col-4-m fp">
                       <div class="left-footer">
                           <img src="/img/logo-white.png" alt="">
                       </div>

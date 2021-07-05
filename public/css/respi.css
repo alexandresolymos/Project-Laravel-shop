@@ -114,9 +114,10 @@
 
 .h1-block h1{
     text-align: center;
-    font-weight: 300;
-    padding: 1em 0 0 0;
+    font-weight: 900;
+    padding: 1em 0px 0.5em 0;
     text-transform: capitalize;
+    color: #db2d64;
 }
 .h2-block h1 {
     font-size: 1rem;
@@ -576,6 +577,31 @@
     color: #db2d64;
     font-size: 2rem;
 }
+
+.svg-1 {
+    position: absolute;
+    top: -4rem;
+    z-index: -2;
+    transform: rotate(45deg);
+    left: -5em;
+}
+
+.svg-2 {
+    position: absolute;
+    top: -6rem;
+    z-index: -2;
+    transform: rotate(-7deg);
+    left: 3em;
+}
+
+.svg-3 {
+    position: absolute;
+    top: -1rem;
+    z-index: -2;
+    transform: rotate(45deg);
+}
+
+
 /* RESPONSIVE */
 
 @media only screen and (min-width: 33.75em) {  /* 540px */
