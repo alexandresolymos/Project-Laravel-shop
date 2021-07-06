@@ -542,7 +542,7 @@
     font-weight: 500;
     text-align: center;
     width: 100%;
-    padding: 1em 0em 1em 0em;
+    padding: 1rem 0rem 1em 0rem;
 }
 
 .category-block:hover span {
@@ -556,11 +556,11 @@
 
 .category-block img {
     width: 100%;
-    border-radius: 1em 1em 0 0;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .category-text {
-    padding: 1em 0 1em;
+    padding: 1rem 0 1rem;
     color: #191919;
     text-align: center;
     font-size: 1rem;
@@ -573,14 +573,16 @@
 }
 
 #section-three {
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 .left-section-three {
-    background-image: url("/img/living-room-design.jpg");
+    background-image: url("/image/homepage-addis.jpg");
     min-height: 350px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;}
+    background-size: cover;
+    border-radius: 2rem 1rem 0 1rem;
+}
 
 .other-img {
     min-height: 350px;
