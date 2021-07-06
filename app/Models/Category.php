@@ -12,6 +12,9 @@ class Category extends Model
     protected $fillable = [
         'title',
         'slugy',
+        'balise_alt',
+        'fullpath',
+        'image',
     ];
 
     public function products(){

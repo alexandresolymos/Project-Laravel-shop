@@ -17,7 +17,7 @@
                         <div class="card">
                             <div class="card-half card-product">
                                 <a href="{{ route('category.show', $categorys->slug  ) }}">
-                                    text
+                                    <img src="{{ asset('/ctg/'. $categorys->image) }}" alt="{{ $categorys->balise_alt }}">
                                 </a>
                             </div>
                             <div class="card-half card-description">

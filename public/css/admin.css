@@ -444,3 +444,8 @@ input:focus {
 .padding {
     padding: 3em;
 }
+
+
+.add {
+    width: 50%;
+}

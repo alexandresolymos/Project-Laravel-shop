@@ -45,9 +45,17 @@ class CategoryController extends Controller
      */
     public function store(CategoryRequest $request)
     {
+        $fileName = null;
+        if (request()->hasFile('image')) {
+            $image = request()->file('image');
+            $fileName = md5($image->getClientOriginalName() . time()) . "." . $image->getClientOriginalExtension();
+            $image->move('./ctg/', $fileName);
+        }
         Category::create([
             'title' => $request->input('title'),
             'slugy' => $request->input('slugy'),
+            'balise_alt' => $request->input('balise_alt'),
+            'image' => $fileName,
         ]);
         return redirect()->route('admin.category.index');
     }

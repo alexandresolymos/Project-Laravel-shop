@@ -18,6 +18,8 @@ class CreateCategoriesTable extends Migration
             $table->string('title')->unique();
             $table->string('slugy')->unique();
             $table->string('slug')->nullable();
+            $table->string('image')->nullable();
+            $table->string('balise_alt')->nullable();
             $table->timestamps();
         });
     }

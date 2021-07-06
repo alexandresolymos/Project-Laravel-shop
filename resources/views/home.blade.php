@@ -37,7 +37,7 @@
                         <div class="category-space">
                             <div class="category-block-home">
                                 <a class="link-category" href="{{ route('category.show', $category->slug ) }}">
-                                    <img src="/image/category-off.jpg" alt="">
+                                    <img src="{{ asset('/ctg/'. $category->image) }}" alt="{{ $category->balise_alt }}">
                                     <span>Voir la Catégorie </span>
                                 </a>
                             </div>

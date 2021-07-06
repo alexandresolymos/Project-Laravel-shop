@@ -24,8 +24,24 @@
                     @enderror
                 </div>
 
+                <div class="form-group">
+                    <label for="">Image</label>
+                    <input type="file" name="image">
+                    @error('image')
+                    <strong>{{ $message }}</strong>
+                    @enderror
+                </div>
+
 
                 <h3>SEO</h3>
+
+                <div class="form-group">
+                    <label for="">Balise alt de l'image</label>
+                    <input type="text" name="balise_alt" placeholder="Titre de l'image">
+                    @error('balise_alt')
+                    <strong>{{ $message }}</strong>
+                    @enderror
+                </div>
 
 
                 <button class="btn-grad-product" type="submit">Valider</button>
