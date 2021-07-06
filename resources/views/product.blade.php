@@ -54,18 +54,18 @@
 
     <div class="container pb">
         <div class="row" style="display: flex;flex-wrap: wrap;">
-            <div class="col-4 col-6-m fp">
+            <div class="col-4-t col-4 col-6-m fp">
                 <div class="product-ctg">
                     <span>Categorie :</span> <p><a href="{{ route('category.show', $category->slug ) }}">{{$category->title}}</a></p>
                 </div>
             </div>
-            <div class="col-4 col-6-m fp">
+            <div class="col-4-t col-4 col-6-m fp">
                 <div class="info-product">
                     <span>Prix : </span><p>{{ $product->price }} €</p>
 
                 </div>
             </div>
-            <div class="col-4 col-6-m  fp">
+            <div class="col-4-t col-4 hidden-max">
                 <div class="add-cart-product">
                     <form action="{{ route('cart.store') }}" method="POST">
                         @csrf
@@ -82,14 +82,34 @@
 
     <div class="container" id="plus-product">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 col-6-t">
                 <div class="other-img">
 
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-6-t">
                 <div class="description-product">
                     <p>{{ $product->description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-all hidden-t">
+        <div class="row">
+            <div class="col-12">
+                <div class="fixed-menu-mobile">
+                    <div class="add-cart-product">
+                        <form action="{{ route('cart.store') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="id" value="{{ $product->id }}">
+                            <input type="hidden" name="title" value="{{ $product->title }}">
+                            <input type="hidden" name="subtitle" value="{{ $product->subtitle }}">
+                            <input type="hidden" name="price" value="{{ $product->price }}">
+                            <button type="submit" id="addcart" style="padding: 1.3em;margin: 1rem">Ajouter au panier</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

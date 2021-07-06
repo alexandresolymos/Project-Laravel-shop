@@ -86,7 +86,7 @@
                                 <div class="col-3-m">
                                     <div class="item-block-img">
                                         <img src="/image/ga.png" alt="">
-                                        <span>Google Analytics</span>
+                                        <span>Analytics</span>
                                     </div>
                                 </div>
                                 <div class="col-3-m">
@@ -111,7 +111,7 @@
 
         <div class="col-12">
             <div class="h2-block">
-                <h2>Services</h2>
+                <h2>Nos Services</h2>
             </div>
             @foreach ($products as $product)
                 <div class="col-3 col-6-m">

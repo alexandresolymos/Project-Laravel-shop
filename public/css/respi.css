@@ -86,6 +86,16 @@
     width: 100%;
 }
 
+.hidden-m {
+    display: none;
+}
+
+@media only screen and (max-width: 45em) {  /* 720px */
+    .hidden-max {
+        display: none;
+    }
+}
+
 .row::after {
     content: "";
     display: table;
@@ -394,10 +404,22 @@
 #addcart {
     color: #fff;
     background-color: #000;
-    padding: 2.5em;
+    padding: 2.3em;
     text-decoration: none;
     cursor: pointer;
     border: 1px solid #000;
+    border-radius: 1rem;
+}
+
+#addcart-product {
+    color: #fff;
+    background-color: #000;
+    padding: 1.3em;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    margin: 1rem;
 }
 
 #addcart:hover {
@@ -405,6 +427,13 @@
     border: 1px solid #000;
     color:#000;
 }
+
+#addcart-product:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color:#000;
+}
+
 .br-title {
     text-transform: capitalize;
     margin: 5em 16px 17px 4px;
@@ -416,7 +445,7 @@
     justify-content: center;
 }
 .product-first-block {
-    min-height: 300px;
+    min-height: 380px;
     box-shadow: inset 0px -7px 68px 0px #0000004f;
     margin-bottom: 3em;
     background-repeat: no-repeat;
@@ -433,6 +462,7 @@
 
 .info-product p{
     font-size: 36px;
+    font-weight: 600;
 }
 
 .description-product {
@@ -443,6 +473,12 @@
     padding: 1.7em;
     background-color: #ddd;
     border-radius: 1em 1em 0 1em;
+}
+
+.product-ctg a {
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .description-product a{
@@ -473,7 +509,6 @@
 .card-product-text {
     margin-bottom: 3em;
 }
-
 
 .product-block {
     box-shadow: 0 2px 40px rgb(0 0 0 / 8%);
@@ -512,6 +547,13 @@
     width: 100%;
 }
 
+.fixed-menu-mobile {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 40px rgb(0 0 0 / 8%);
+}
 
 /* HOME PAGE  */
 
@@ -586,8 +628,10 @@
 
 .other-img {
     min-height: 350px;
-    background-color: #000;
+    background: url("/image/seo-footer.png");
     margin: 0em 1em 0em 1em;
+    background-position: center;
+    background-size: contain;
 }
 .h2-block span {
     text-transform: capitalize;
@@ -669,7 +713,7 @@
 }
 
 .item-block {
-    margin-top: 2rem;
+    margin-top: 3rem;
     text-align: center;
 }
 
@@ -741,6 +785,11 @@
     .col-12-t {
         width: 100%;
     }
+
+    .hidden-t {
+        display: none;
+    }
+
 
     .navbar a {
         text-decoration:none;
