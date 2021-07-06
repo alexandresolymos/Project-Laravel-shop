@@ -55,7 +55,7 @@
     <div class="container pb">
         <div class="row" style="display: flex;flex-wrap: wrap;">
             <div class="col-4 col-6-m fp">
-                <div class="description-product">
+                <div class="product-ctg">
                     <span>Categorie :</span> <p><a href="{{ route('category.show', $category->slug ) }}">{{$category->title}}</a></p>
                 </div>
             </div>
