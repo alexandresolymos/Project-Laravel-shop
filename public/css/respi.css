@@ -632,6 +632,7 @@
     font-weight: 600;
     color: #db2d64;
 }
+
 .typings p span.cursor {
     display: inline-block;
     background-color: #ccc;
