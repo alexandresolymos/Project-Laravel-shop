@@ -33,7 +33,7 @@
                 <h2>Nos services</h2>
             </div>
             @foreach($categories as $category)
-                    <div class="col-6-m col-6-t col-3 ">
+                    <div class="col-6-m col-4-t col-3 ">
                         <div class="category-space">
                             <div class="category-block-home">
                                 <a class="link-category" href="{{ route('category.show', $category->slug ) }}">

@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <div class="border-shadow">
+            <div class="border-shadow" style="margin-top: 5rem;">
                 <div class="card-header">{{ __('Register') }}</div>
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
