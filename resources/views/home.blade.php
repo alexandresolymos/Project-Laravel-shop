@@ -9,9 +9,15 @@
 
         <div class="col-12">
                 <div class="home-first-block">
-                    <div class="typings">
-                        <p>Agence <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-                    </div>
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-12">
+                               <div class="typings">
+                                   <p>Agence <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
                 </div>
         </div>
 
@@ -52,14 +58,46 @@
         <div class="col-12">
             <div class="col-6">
                <div class="left-section-three">
-                    <div class="block-svg">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 3H11V7H17V13H21V21H13V17H7V11H3V3ZM15 13H13V15H9V11H11V9H15V13Z" fill="currentColor" /></svg>
-                    </div>
                </div>
             </div>
             <div class="col-6">
                 <div class="right-section-three">
-jjj
+                    <div class="h3-block">
+                        <h3>Notre agence</h3>
+                    </div>
+                    <p>Nous accompagnons nos clients dans la création de site internet: étude, UX, conception, design, développement, SEO.</br>
+                        Notre agence web est capable de répondre à tous vos besoins et d'élaborer une véritable stratégie digitale.</p>
+
+                    <div class="item-block">
+                        <div class="container-all">
+                            <div class="row">
+                                <div class="col-3-m">
+                                    <div class="item-block-img">
+                                        <img src="/image/semrush.png" alt="">
+                                        <span>Seo</span>
+                                    </div>
+                                </div>
+                                <div class="col-3-m">
+                                    <div class="item-block-img">
+                                        <img src="/image/mg.png" alt="">
+                                        <span>Magento</span>
+                                    </div>
+                                </div>
+                                <div class="col-3-m">
+                                    <div class="item-block-img">
+                                        <img src="/image/ga.png" alt="">
+                                        <span>Google Analytics</span>
+                                    </div>
+                                </div>
+                                <div class="col-3-m">
+                                    <div class="item-block-img">
+                                        <img src="/image/wordpress.png" alt="">
+                                        <span>Wordpress</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,7 +140,7 @@ jjj
     const typedTextSpan = document.querySelector(".typed-text");
     const cursorSpan = document.querySelector(".cursor");
 
-    const textArray = ["Web", "Design", "Seo", "Addis."];
+    const textArray = ["Web", "Design", "Seo", "addis."];
     const typingDelay = 200;
     const erasingDelay = 100;
     const newTextDelay = 2000; // Delay between current and next text
