@@ -65,7 +65,7 @@
 
                 </div>
             </div>
-            <div class="col-4-t col-4 hidden-max">
+            <div class="col-4-t col-4 hidden-max fp-t">
                 <div class="add-cart-product">
                     <form action="{{ route('cart.store') }}" method="POST">
                         @csrf

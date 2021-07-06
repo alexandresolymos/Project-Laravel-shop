@@ -33,11 +33,11 @@
                 <h2>Nos services</h2>
             </div>
             @foreach($categories as $category)
-                    <div class="col-3 col-6-m">
+                    <div class="col-6-m col-6-t col-3 ">
                         <div class="category-space">
-                            <div class="category-block">
+                            <div class="category-block-home">
                                 <a class="link-category" href="{{ route('category.show', $category->slug ) }}">
-                                    <img src="https://shtheme.com/preview/orgafe/img/demos/home1.jpg" alt="">
+                                    <img src="/image/category-off.jpg" alt="">
                                     <span>Voir la Catégorie </span>
                                 </a>
                             </div>
@@ -56,11 +56,11 @@
 <div class="container" id="section-three">
     <div class="row">
         <div class="col-12">
-            <div class="col-6">
+            <div class="col-6 col-6-t">
                <div class="left-section-three">
                </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-6-t">
                 <div class="right-section-three">
                     <div class="h3-block">
                         <h3>Notre agence</h3>
@@ -106,7 +106,7 @@
 
 
 
-<div class="container">
+<div class="container" style="margin-bottom: 3rem;">
     <div class="row">
 
         <div class="col-12">
