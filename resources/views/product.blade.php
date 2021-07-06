@@ -96,10 +96,14 @@
     </div>
 
 
-    <div class="container-all hidden-t">
-        <div class="row">
-            <div class="col-12">
-                <div class="fixed-menu-mobile">
+    <div class="container hidden-t" id="fixed-menu-mobile">
+        <div class="row fp-wm">
+            <div class="col-6-m">
+                <button class="back-product" onclick="goBack()">Retour </button>
+            </div>
+
+            <div class="col-6-m">
+                <div class="fixed-product-mobile">
                     <div class="add-cart-product">
                         <form action="{{ route('cart.store') }}" method="POST">
                             @csrf
@@ -107,7 +111,7 @@
                             <input type="hidden" name="title" value="{{ $product->title }}">
                             <input type="hidden" name="subtitle" value="{{ $product->subtitle }}">
                             <input type="hidden" name="price" value="{{ $product->price }}">
-                            <button type="submit" id="addcart" style="padding: 1.3em;margin: 1rem">Ajouter au panier</button>
+                            <button type="submit" id="addcart-product" >Ajouter au panier</button>
                         </form>
                     </div>
                 </div>

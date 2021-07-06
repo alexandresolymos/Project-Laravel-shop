@@ -5,3 +5,6 @@ function showPage() {
     document.getElementById("load").style.display = "none";
 }
 
+function goBack() {
+    window.history.back();
+}
