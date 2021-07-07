@@ -1,5 +1,6 @@
 @extends('layouts.master')
-
+@section('meta_title')Agence web design & seo @stop
+@section('meta_description')Description test @stop
 
 @section('content')
 

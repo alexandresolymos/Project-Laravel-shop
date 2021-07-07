@@ -21,7 +21,7 @@ class ProductController extends Controller
     public function random()
     {
         $categories = Category::all();
-        $products = Product::inRandomOrder()->take(5)->get();
+        $products = Product::inRandomOrder()->take(4)->get();
         return view('home', compact('products', 'categories'));
     }
 

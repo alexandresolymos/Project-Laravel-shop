@@ -430,7 +430,11 @@ select {
     margin: 1rem 0rem 2rem;
     border: none;
 }
+
+.form-group img {
+    width: 50%;
 }
+
 /*  PRODUITS  */
 #addcart {
     color: #fff;
