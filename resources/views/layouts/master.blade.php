@@ -78,12 +78,18 @@
                       <div class="right-footer">
                             <ul>
                                 <li><a href="#">Contact</a></li>
-                                <li><a href="{{ route('login') }}">Connexion</a></li>
-                                <li><a href="{{ route('register') }}">Inscription</a></li>
                                 <li><a href="#">CGV</a></li>
                                 <li><a href="#">CGU</a></li>
                                 <li><a href="#">Mentions légales</a></li>
                             </ul>
+                          <p>
+                              <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                  <img style="border:0;width:88px;height:31px"
+                                       src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                       alt="CSS Valide !" />
+                              </a>
+                          </p>
+
                       </div>
                   </div>
 
