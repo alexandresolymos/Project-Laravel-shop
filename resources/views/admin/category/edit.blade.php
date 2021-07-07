@@ -21,8 +21,9 @@
                     <input type="file" name="image" value="{{ $category->image }}">
                 </div>
 
-                <div class="form-group">
-                    <h3>Seo</h3>
+
+                <div class="seo-title">
+                    <h3>SEO</h3>
                 </div>
 
                 <div class="form-group">

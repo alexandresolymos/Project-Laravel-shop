@@ -36,14 +36,6 @@
                          <label for="">Categorie</label>
                      </div>
 
-                     <div class="form-group">
-                     <label for="">Slug</label>
-                     <input type="text" name="slugy" placeholder="Mon slug ">
-                     @error('slugy')
-                     <strong>{{ $message }}</strong>
-                     @enderror
-                     </div>
-
 
                      <div class="form-group">
                      <label for="">Description</label>
@@ -70,12 +62,22 @@
                      </div>
 
 
-                     <h3>SEO</h3>
+                     <div class="seo-title">
+                         <h3>SEO</h3>
+                     </div>
 
                      <div class="form-group">
                          <label for="">Title</label>
                          <input type="text" name="meta_title" placeholder="Mon titre de page">
                          @error('meta_title')
+                         <strong>{{ $message }}</strong>
+                         @enderror
+                     </div>
+
+                     <div class="form-group">
+                         <label for="">Slug</label>
+                         <input type="text" name="slugy" placeholder="Mon slug ">
+                         @error('slugy')
                          <strong>{{ $message }}</strong>
                          @enderror
                      </div>

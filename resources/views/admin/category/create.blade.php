@@ -17,14 +17,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Slug</label>
-                    <input type="text" name="slugy" placeholder="Mon slug ">
-                    @error('slugy')
-                    <strong>{{ $message }}</strong>
-                    @enderror
-                </div>
-
-                <div class="form-group">
                     <label for="">Image</label>
                     <input type="file" name="image">
                     @error('image')
@@ -33,7 +25,9 @@
                 </div>
 
 
-                <h3>SEO</h3>
+                <div class="seo-title">
+                    <h3>SEO</h3>
+                </div>
 
                 <div class="form-group">
                     <label for="">Balise alt de l'image</label>
@@ -42,6 +36,15 @@
                     <strong>{{ $message }}</strong>
                     @enderror
                 </div>
+
+                <div class="form-group">
+                    <label for="">Slug</label>
+                    <input type="text" name="slugy" placeholder="Mon slug ">
+                    @error('slugy')
+                    <strong>{{ $message }}</strong>
+                    @enderror
+                </div>
+
 
 
                 <button class="btn-grad-product" type="submit">Valider</button>

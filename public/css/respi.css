@@ -364,6 +364,22 @@
     font-weight: 600;
     width: 100%;
 }
+
+.form-group-title {
+
+}
+
+.form-group-title input {
+    color: #1a0dab;
+}
+
+.form-group-slug {
+
+}
+
+.form-group-slug input {
+    color: #202124;
+}
 .btn-primary {
     padding: 18px 60px;
     width: 100%;
@@ -400,6 +416,21 @@
     border: 1px solid #000;
 }
 
+.seo-title {
+    background-image: url("/image/svgexport-1.svg");
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem 0rem 2rem;
+}
+
+select {
+    background-image: url("/image/svgexport-1.svg");
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem 0rem 2rem;
+    border: none;
+}
+}
 /*  PRODUITS  */
 #addcart {
     color: #fff;
@@ -510,6 +541,7 @@
 }
 .card-product {
     margin-bottom: 3em;
+    height: 167px;
 }
 
 .card-product-text {
